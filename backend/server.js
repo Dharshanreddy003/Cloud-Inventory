@@ -41,7 +41,7 @@ connectDB()
       } catch (error) {
         console.error("❌ Sync to Atlas failed:", error.message);
       }
-    }, 20 * 1000);
+    }, 5 * 1000);
   })
   .catch((err) => {
     console.error("❌ MongoDB connection failed:", err.message);
